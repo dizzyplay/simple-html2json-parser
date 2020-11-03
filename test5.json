@@ -1,0 +1,374 @@
+[
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "sleep"
+          }
+        ],
+        "attribute": [
+          {
+            "id": "w16"
+          }
+        ]
+      }
+    ],
+    "value": [
+      {
+        "text": "I "
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w3"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " in a bed."
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "나는"
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w4"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " 침대에서 "
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "잔다."
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w5"
+      }
+    ]
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "My mom"
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w6"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " always "
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "smiles."
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w7"
+      }
+    ]
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "우리 엄마는"
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w8"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " 항상 "
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "웃으신다."
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w9"
+      }
+    ]
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "walk"
+          }
+        ],
+        "attribute": [
+          {
+            "id": "w17"
+          }
+        ]
+      }
+    ],
+    "value": [
+      {
+        "text": "We "
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w10"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " along the river."
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "우리는"
+          }
+        ],
+        "attribute": [
+          {
+            "id": "w11"
+          }
+        ]
+      },
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "걷는다."
+          }
+        ],
+        "attribute": [
+          {
+            "id": "w12"
+          }
+        ]
+      }
+    ],
+    "value": [
+      {
+        "text": " 강을 따라 "
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w19"
+      }
+    ]
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "run"
+          }
+        ],
+        "attribute": [
+          {
+            "id": "w18"
+          }
+        ]
+      }
+    ],
+    "value": [
+      {
+        "text": "The dogs "
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w13"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " very fast."
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "그 개들은"
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w14"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " 매우 빠르게 "
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "달린다."
+      }
+    ],
+    "attribute": [
+      {
+        "id": "w15"
+      }
+    ]
+  }
+]

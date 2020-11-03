@@ -2,6 +2,7 @@ const json = require('./test.json');
 const json2 = require('./test2.json');
 const json3 = require('./test3.json');
 const json4 = require('./test4.json');
+const json5 = require('./test5.json');
 
 
 function traversal(obj){
@@ -34,7 +35,7 @@ function traversal(obj){
 }
 
 (()=>{
-	json4.forEach( j => {
+	json5.forEach( j => {
 		traversal(j);
 	})
 })()

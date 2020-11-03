@@ -80,7 +80,7 @@ const extractWord = html => {
 	let word = [];
 	let end =0;
 	for( const v of html){
-		if (/[a-z0-9가-힣 .,"=』『\+]/i.test(v)){
+		if (/[a-z0-9가-힣 .,"=』『+)(]/i.test(v)){
 			word.push(v);
 			end++;
 		}else break;
@@ -112,9 +112,26 @@ const extractWord = html => {
 // <br/>
 // `),null,4))
 
+// console.info(JSON.stringify(parser(`
+// <b>Point 1. 『주어+동사』로 의미가 완전한 문장</b><br/>
+// 『주어+동사』로 이루어지며, 이 자체로 의미가 성립하는 문장이다. 수식어구와 함께 쓰여 문장이 길어지는 경우가 많다.
+// `),null,2));
+
 console.info(JSON.stringify(parser(`
-<b>Point 1. 『주어+동사』로 의미가 완전한 문장</b><br/>
-『주어+동사』로 이루어지며, 이 자체로 의미가 성립하는 문장이다. 수식어구와 함께 쓰여 문장이 길어지는 경우가 많다.
+<span id="w3">I <span id="w16">sleep</span></span> in a bed.<br/>
+<span id="w4">나는</span> 침대에서 <span id="w5">잔다.</span>
+<br/>
+<br/>
+<span id="w6">My mom</span> always <span id="w7">smiles.</span><br/>
+<span id="w8">우리 엄마는</span> 항상 <span id="w9">웃으신다.</span>
+<br/>
+<br/>
+<span id="w10">We <span id="w17">walk</span></span> along the river.<br/>
+<span id="w19"><span id="w11">우리는</span> 강을 따라 <span id="w12">걷는다.</span></span>
+<br/>
+<br/>
+<span id="w13">The dogs <span id="w18">run</span></span> very fast.<br/>
+<span id="w14">그 개들은</span> 매우 빠르게 <span id="w15">달린다.</span>
 `),null,2));
 // console.info(JSON.stringify(parser(`<br/>`)));
 // console.info(JSON.stringify(parser(`<span>aaaaa<br/>aaa<span>hello</span><br/>aaaaa<br/></span><br/>`)));
