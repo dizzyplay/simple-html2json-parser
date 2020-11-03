@@ -18,14 +18,6 @@ const json = [
 			}
 		]
 	},
-	{
-		text:"주어",
-		styles:[
-			{
-				type:"box"
-			}
-		]
-	}
 ];
 
 class Sentence {

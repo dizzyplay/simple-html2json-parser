@@ -1,0 +1,89 @@
+[
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "run"
+          }
+        ],
+        "attribute": [
+          {
+            "prop": "id",
+            "value": "w18"
+          }
+        ]
+      }
+    ],
+    "value": [
+      {
+        "text": "The dogs "
+      }
+    ],
+    "attribute": [
+      {
+        "prop": "id",
+        "value": "w13"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " very fast."
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "그 개들은"
+      }
+    ],
+    "attribute": [
+      {
+        "prop": "id",
+        "value": "w14"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " 매우 빠르게 "
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "달린다."
+      }
+    ],
+    "attribute": [
+      {
+        "prop": "id",
+        "value": "w15"
+      }
+    ]
+  }
+]

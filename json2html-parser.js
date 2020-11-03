@@ -1,4 +1,7 @@
 const json = require('./test.json');
+const json2 = require('./test2.json');
+const json3 = require('./test3.json');
+const json4 = require('./test4.json');
 
 
 function traversal(obj){
@@ -8,7 +11,7 @@ function traversal(obj){
 	while(queue.length > 0){
 		const o = queue.shift()
 		if (o.tag !== 'br'){
-			frontStack.push(`<${o.tag}${o.attribute.reduce((acc,v)=>acc+=` ${v.prop}="${v.value}"`,'')}>${o.value.reduce((acc,v)=> acc+=v.text,'')}`);
+			frontStack.push(`<${o.tag}${o.attribute.reduce((acc,v)=>acc+=` id="${v.id}"`,'')}>${o.value.reduce((acc,v)=> acc+=v.text,'')}`);
 			backStack.push(`</${o.tag}>`)
 		}else {
 			frontStack.push(`__br__`);
@@ -31,7 +34,7 @@ function traversal(obj){
 }
 
 (()=>{
-	json.forEach( j => {
+	json4.forEach( j => {
 		traversal(j);
 	})
 })()
