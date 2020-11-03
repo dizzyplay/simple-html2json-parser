@@ -61,8 +61,15 @@ const extractWord = html => {
 }
 
 // console.info(extractWord('a</p>'));
-console.info(JSON.stringify(parser('<p>dd<span>this is a boy.</span></p><p>dd</p>'),null,4));
+console.info(JSON.stringify(parser('<span>i <b>am</b> a boy</span>'),null,4));
 
 // 새로운 태그를 만나면 스택에 넣는다
 // 태그가 아닌 문자를 만나면 스택 맨위에 있는것을 팝해서 해당 태그의 값으로서 추가한다
 // 태그가 닫히면 스택을 팝하고 한번더 팝한 노드의 자식으로 추가한다.
+
+
+// [{ "text":"i am a boy", styles:[
+//       { "type":"bold", "target":["idx":0, word:"am"]}
+//       ]
+// }]
+
