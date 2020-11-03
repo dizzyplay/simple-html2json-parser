@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+</head>
+<body>
+<h1>Target Sentence Style Example.</h1>
+<div class="container">
+	<div class="sentence-box">
+		<span id="w1">I<sub>주어</sub></span> <span id="w2">sleep<sub>동사</sub></span> <span>in a bed.<sub>수식어구</sub></span><br/>
+		<span>나는 침대에서 잔다</span>
+	</div>
+	<div class="point-container">
+		<button id="point-btn1" class="point-box">
+			<b>Point 1. 『주어+동사』로 의미가 완전한 문장</b><br>
+			『주어+동사』로 이루어지며, 이 자체로 의미가 성립하는 문장이다. 수식어구와 함께 쓰여 문장이 길어지는 경우가 많다.
+		</button>
+		<button id="point-btn2" class="point-box">
+			<b>Point 2. 1형식 주요 동사: go, come, live, talk, walk, run, smile 등</b><br>
+			자주 쓰이는 1형식 동사들을 암기해두자.
+			이를 통해 주어와 동사를 빠르게 파악한 후, 수식어구의 의미를 더해 해석한다.
+		</button>
+	</div>
+</div>
+<div class="container">
+	<label>
+		<textarea wrap="soft" readonly cols="100%" rows="10" id="textarea-1">
+		</textarea>
+	</label>
+</div>
+<div class="container">
+	<div class="sentence-box">
+		<p>
+			<span id="w3">I <span id="w16">sleep</span></span> in a bed.<br>
+			<span id="w4">나는</span> 침대에서 <span id="w5">잔다.</span>
+		</p>
+		<p>
+			<span id="w6">My mom</span> always <span id="w7">smiles.</span><br>
+			<span id="w8">우리 엄마는</span> 항상 <span id="w9">웃으신다.</span>
+		</p>
+		<p>
+			<span id="w10">We <span id="w17">walk</span></span> along the river.<br>
+			<span id="w11">우리는</span> 강을 따라 <span id="w12">걷는다.</span>
+		</p>
+		<p>
+			<span id="w13">The dogs <span id="w18">run</span></span> very fast.<br>
+			<span id="w14">그 개들은</span> 매우 빠르게 <span id="w15">달린다.</span>
+		</p>
+	</div>
+	<div class="point-container">
+		<button id="point-btn3" class="point-box">
+			<b>Point 1. 『주어+동사』로 의미가 완전한 문장</b><br>
+			『주어+동사』로 이루어지며, 이 자체로 의미가 성립하는 문장이다. 수식어구와 함께 쓰여 문장이 길어지는 경우가 많다.
+		</button>
+		<button id="point-btn4" class="point-box">
+			<b>Point 2. 1형식 주요 동사: go, come, live, talk, walk, run, smile 등</b><br>
+			자주 쓰이는 1형식 동사들을 암기해두자.
+			이를 통해 주어와 동사를 빠르게 파악한 후, 수식어구의 의미를 더해 해석한다.
+		</button>
+	</div>
+</div>
+<div class="container">
+	<button id="clear">clear</button>
+</div>
+<script type="application/javascript">
+	const btn1 = document.querySelector('#point-btn1');
+	const btn2 = document.querySelector('#point-btn2');
+	const btn3 = document.querySelector('#point-btn3');
+	const btn4 = document.querySelector('#point-btn4');
+
+	const clearBtn = document.querySelector('#clear');
+
+	const scene1 = ['#w1', '#w2'].map(id => ({targetId:id,style:{type:'bold'}}));
+	const scene2 = ['#w2'].map(id => ({targetId:id, style:{type:'highlight'}}));
+	const scene3 = Array.from({length:13},(_,idx)=>`#w${idx+3}`).map(id => ({targetId:id, style:{type:'highlight'}}))
+	const scene4 = ['#w16','#w5','#w7','#w9','#w17','#w12','#w18','#w15'].map(id => ({targetId:id, style:{type:'highlight'}}))
+	btn1.addEventListener('click', applyStyle(scene1, 'highlight'));
+	btn2.addEventListener('click', applyStyle(scene2, 'bold'));
+
+	btn3.addEventListener('click', applyStyle(scene3, 'highlight'));
+	btn4.addEventListener('click', applyStyle(scene4, 'highlight'));
+
+	clearBtn.addEventListener('click', e=> {
+		initAllStyle();
+	} )
+	const textarea1 = document.querySelector('#textarea-1');
+	textarea1.textContent = `
+-- 표현부 ---> 스타일링할 위치를 span으로 감싸고 id를 지
+<span id="w1">I<sub>주어</sub></span> <span id="w2">sleep<sub>동사</sub></span> <span>in a bed.<sub>수식어구</sub></span><br/>
+<span>나는 침대에서 잔다</span>
+
+-- 외부 스타일 표현 --
+scene1 = [{targetId:'#w1',style:{type:'bold'}}, {targetId:'#w2',style:{type:'highlight'}}];
+scene2 = [{targetId'#w2',style:{type:'highlight'}}];
+	`
+	function applyStyle (scenes, styleClass) {
+		return function (e) {
+			initAllStyle();
+			scenes.forEach(s => {
+				const target = document.querySelector(s.targetId);
+				target.className = '';
+				target.className = styleClass;
+			});
+		};
+	}
+
+	function initAllStyle () {
+		const spans = document.querySelectorAll('span');
+		spans.forEach(s => s.className = '');
+	}
+</script>
+</body>
+</html>
+
+
+<!--
+	스타일 주고싶은 요소에 아이디를 정한다.
+	씬을 만든다 <- 요소 아이디의 집합.
+	해당 씬을 활성화한다.
+-->

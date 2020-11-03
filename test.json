@@ -1,0 +1,111 @@
+[
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "sub",
+        "child": [],
+        "value": [
+          {
+            "text": "주어"
+          }
+        ],
+        "attribute": []
+      }
+    ],
+    "value": [
+      {
+        "text": "I"
+      }
+    ],
+    "attribute": [
+      {
+        "prop": "id",
+        "value": "w1"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " "
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "sub",
+        "child": [],
+        "value": [
+          {
+            "text": "동사"
+          }
+        ],
+        "attribute": []
+      }
+    ],
+    "value": [
+      {
+        "text": "sleep"
+      }
+    ],
+    "attribute": [
+      {
+        "prop": "id",
+        "value": "w2"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": " this is good "
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "sub",
+        "child": [],
+        "value": [
+          {
+            "text": "수식어구"
+          }
+        ],
+        "attribute": []
+      }
+    ],
+    "value": [
+      {
+        "text": "in a bed."
+      }
+    ],
+    "attribute": []
+  },
+  {
+    "tag": "br",
+    "child": [],
+    "value": [],
+    "attribute": []
+  },
+  {
+    "tag": "span",
+    "child": [],
+    "value": [
+      {
+        "text": "나는 침대에서 잔다"
+      }
+    ],
+    "attribute": []
+  }
+]
