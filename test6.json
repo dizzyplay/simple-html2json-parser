@@ -1,0 +1,51 @@
+[
+  {
+    "tag": "span",
+    "child": [
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "우리는"
+          }
+        ],
+        "attribute": [
+          {
+            "id": "w11"
+          }
+        ]
+      },
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": " 강을 따라 "
+          }
+        ],
+        "attribute": []
+      },
+      {
+        "tag": "span",
+        "child": [],
+        "value": [
+          {
+            "text": "걷는다."
+          }
+        ],
+        "attribute": [
+          {
+            "id": "w12"
+          }
+        ]
+      }
+    ],
+    "value": [],
+    "attribute": [
+      {
+        "id": "w19"
+      }
+    ]
+  }
+]

@@ -3,6 +3,7 @@ const json2 = require('./test2.json');
 const json3 = require('./test3.json');
 const json4 = require('./test4.json');
 const json5 = require('./test5.json');
+const json6 = require('./test6.json');
 
 
 function traversal(obj){
